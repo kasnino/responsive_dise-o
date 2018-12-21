@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("font-awesome.min.css");
+
+*{
+	margin:0;
+	padding:0;
+	font-weight: lighter;
+}
+
+
+body {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+
+	text-transform: capitalize;
+	list-style: none;
+	margin:0;
+	padding:0;   
+	background: #0a0a0a;
+}
+
+
+ul{
+	list-style: none;
+}
+.imagen {
+	background:  #2b2b2b url("fondo.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 1000px;
+}
+
+
+.imagen2 {
+	background:  #2b2b2b url("esquema.png");
+	background-size: cover;
+	background-repeat: repeat;
+	height: 175px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+
+	border:none;
+	border-radius: 5px;
+	transform: scale(1.2);
+}
+
+
+
+.relleno{
+	margin:0;
+	padding:0;
+	background: #252525;
+	width: 800px;
+	height: 130vh;
+	
+}
+
+.grid{
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 30% auto 30%;
+	grid-template-rows: 30% auto 30%;
+	justify-content: stretch;
+	grid-row-gap: 10px;
+}
+
+.cabeza{
+
+	width: 100%;
+	height: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+.cabeza h1{
+
+	font-style: normal;
+	font-weight: 100;
+	color: #FFF;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.a{
+	justify-content: center;
+	text-align: center;
+	color:yellow;
+}
+.lista_work{
+	color: #FFF;
+	justify-content: center;
+	text-align: center;
+
+
+}
+
+.lista_work li a{ 
+	color: #fff;
+	justify-content: center;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.lista_work li:hover{ 
+	transform: scale(1.3);
+	transition: 2s all;
+	text-decoration: none;
+
+}
+.lista_work li a:hover{
+	color: yellow;
+text-decoration: none;
+
+}
+
+
+.b{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+.b .imagen{
+
+	background: #348cb2 url("./kasnino.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	padding: 10px;
+	transition: 3s all;
+	border: 2px solid yellow;
+
+}
+.b .imagen:hover{
+	transform: scale(1.3);
+}
+
+.b .texto{
+	z-index: 5;
+	flex-direction: column;
+	font-size: 5px;
+	margin-top: 190px;
+}
+.c{
+	text-align: center;
+	color:yellow;
+}
+.d{
+	text-align: center;
+	color:yellow;
+}
+
+.e{
+	text-align: center
+	color:yellow;
+}
+.f{
+	text-align: center;
+	color:yellow;
+}
+.g{
+	text-align: center;
+	color:yellow;
+}
+
+.h{
+	text-align: center;
+	color:yellow;
+}
+.box_skill{
+	text-align: center;
+	color: yellow;
+	
+}
+
+.lista{
+	color: #FFF;
+	position: absolute;
+	margin-top: 108px;
+	text-align: center;
+
+
+}
+
+hr{
+	border: 3px dotted white;
+}
+
+.lista__contacto li a{
+	width: 10px;
+	height: 10px;
+	color: yellow;
+	justify-content: space-around;
+	align-items: right;
+	text-align: right;
+
+}
+
+.lista__contacto li{
+
+
+	justify-content: space-between;
+
+	text-align: left;
+	display: flex;
+	margin: 17px;
+	padding: 5px;
+}
+
+.lista__contacto .correo:hover{
+	transform: scale(1.5);
+	transition: 3s all;
+
+}
+.lista__contacto .telefono:hover{
+	transform: scale(1.5);
+	transition: 3s all;
+}
+
+.lista li:hover{
+	color: yellow;
+	transform: scale(1.3);
+	transition: 3s all;
+}
+
+.box_skill .lista__skill li a{
+
+	color: #FFF;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.lista_pasiones{
+	margin-top: 5px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	justify-content: stretch;
+
+
+}
+
+.lista_pasiones li a:hover{
+	cursor: pointer;
+	color:#FFF;
+	transform: scale(1.5);
+	transition: .5s all;
+
+}
+
+@media screen and (max-width: 731px) {
+	/* Basic */
+	body {
+		min-width: 411px;
+	}
+	body, input, select, textarea {
+		font-size: 10pt;
+	}
+
+	.relleno{
+		height: 130vh;
+	}
+	.grid{
+		margin: 0;
+		padding: 0;
+		width: 370px;
+	}
+
+
+}
+
+@media screen and (max-width: 1030px) {
+	/* Basic */
+	body, input, select, textarea {
+		font-size: 10pt;
+	}
+	.relleno{
+		height: 130vh;
+	}
+	.grid{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}
