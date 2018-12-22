@@ -12,7 +12,8 @@ body {
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 100;
-
+	width: 100%;
+	height: 100%;
 	text-transform: capitalize;
 	list-style: none;
 	margin:0;
@@ -28,7 +29,8 @@ ul{
 	background:  #2b2b2b url("fondo.jpg");
 	background-size: cover;
 	background-repeat: repeat;
-
+    margin:0;
+	padding:0; 
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -45,7 +47,8 @@ ul{
 	justify-content: center;
 	align-content: center;
 	width: 100%;
-
+    grid-template-columns: 100%
+	grid-template-rows: 100% 
 	border:none;
 	border-radius: 5px;
 	transform: scale(1.2);
@@ -59,6 +62,23 @@ ul{
 	background: #252525;
 	width: 800px;
 	height: 130vh;
+	
+}
+
+.relleno2{
+	margin:0;
+	padding:0;
+	background: #252525;
+	width: 800px;
+	height: 130vh;
+    box-shadow: 0 0 1em #fff;
+border-radius: 20px;
+transform: perspective( 400px ) rotateX( 30deg );
+perspective-origin: center,top;
+
+
+	transition: 3s all; 
+
 	
 }
 
@@ -300,4 +320,31 @@ hr{
 		padding: 0;
 		width: 100%;
 	}
+}
+
+.perspectiva{
+
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 1000px;
+
+
+    background:  #2b2b2b url("fondo.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+			display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+
+
+.relleno2:hover{
+
+transform: scale(1.5);
+
+
+
 }
